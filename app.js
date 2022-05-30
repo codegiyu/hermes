@@ -1,6 +1,3 @@
-let myScreenOrientation = window.screen.orientation;
-myScreenOrientation.lock("natural");
-
 // Question 1
 let hermes = document.getElementById("team-name");
 hermes.style.color = "#a65d03";

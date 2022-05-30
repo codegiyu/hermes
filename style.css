@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Outfit:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Book+Basic:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:wght@300;400;500;600&display=swap');
 
 * {
     margin: 0;
@@ -82,7 +82,7 @@ main {
 .team-members {
     width: 30%;
     z-index: 3;
-    color: #535252;
+    color: #1d1d1d;
 }
 
 .line-1, .line-2, .line-3, .leader-line {
@@ -91,7 +91,7 @@ main {
 }
 
 .team-members p {
-    font-family: 'Outfit', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 1.25rem;
     font-weight: 500;
     line-height: 1.85rem;
@@ -159,10 +159,14 @@ main {
     }
 
     .card {
-        transform: rotate(90deg);
-        -webkit-transform: rotate(90deg);
-        -moz-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        -o-transform: rotate(90deg);
-}
+        transform: rotate(90deg) scale(1.25);
+        -webkit-transform: rotate(90deg) scale(1.25);
+        -moz-transform: rotate(90deg) scale(1.25);
+        -ms-transform: rotate(90deg) scale(1.25);
+        -o-transform: rotate(90deg) scale(1.25);
+    }
+
+    .team-members {
+        margin-top: -5px;
+    }
 }
