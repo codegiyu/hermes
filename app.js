@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+ScreenOrientation.lock(natural);
+
 // Question 1
 let hermes = document.getElementById("team-name");
 hermes.style.color = "#a65d03";
@@ -38,33 +39,15 @@ console.log(sentenceFour);
 console.log(sentenceFive);
 
 // Question 5
-=======
-let codegiyu = {
-    "first name": "Edward-Precious",
-    "last name": "Omegbu",
-    "best movie": "One Piece",
-}
-
-console.log(codegiyu["best movie"]);
-
-console.log(5%2);
-
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 function remainder (a, b) {
     return a%b;
 }
 
-<<<<<<< HEAD
 //Question 6
-=======
-console.log(remainder(8,7));
-
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 function quadraticSolver(a, b, c) {
     let discriminant = Math.pow(b, 2) - (4 * a * c);
     let rootOne = ((-1 * b) + Math.sqrt(discriminant)) / (2 * a);
     let rootTwo = ((-1 * b) - Math.sqrt(discriminant)) / (2 * a);
-<<<<<<< HEAD
     let answer;
 
     if(rootOne === rootTwo) {
@@ -73,17 +56,11 @@ function quadraticSolver(a, b, c) {
         answer = "The roots of your quadratic equation are " + rootOne + " and " + rootTwo + ".";
     }
     
-=======
-
-    let answer = "The roots of your quadratic equation are " + rootOne + " and " + rootTwo + ".";
-
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
     return answer;
 }
 
 console.log(quadraticSolver(2, -3, 1));
 
-<<<<<<< HEAD
 // Question 7
 const myNoun = "dog";
 const myAdjective = "big";
@@ -93,16 +70,12 @@ const myAdverb = "quickly";
 const wordBlanks = "My " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
 
 // Question 8
-=======
-
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 function areaOfCircle(r, unit) {
     const pi = 3.142;
     let area = pi * Math.pow(r, 2);
     let answer = "The area of the circle is " + area.toFixed(2) + unit + " squared."
     return answer;
 }
-<<<<<<< HEAD
 console.log(areaOfCircle(9, "cm"));
 
 //Question 9
@@ -117,12 +90,6 @@ console.log(8200, 17.5, 2.5);
 console.log(10 % 4);
 
 // Question 11
-=======
-
-console.log(areaOfCircle(9, "cm"));
-
-
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 function bmiCalculator(mass, height) {
     let bmi = mass / Math.pow(height, 2);
     return bmi;

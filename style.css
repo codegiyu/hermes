@@ -9,29 +9,21 @@
 main {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(252, 239, 224);
+    background-color: rgb(252, 250, 222);
     display: flex;
-<<<<<<< HEAD
     align-items: center;
-=======
-    align-items: top;
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
     justify-content: center;
 }
 
 .card {
     position: relative;
-<<<<<<< HEAD
-    width: 660px;
+    width: 42rem;
     aspect-ratio: 1.85;
-=======
-    width: 50%;
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
     background-color: white;
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 10px;
-    padding: 10px 10px 10px 30px;
+    padding: 0.75rem 0.75rem 0.75rem 2rem;
     z-index: 1;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
@@ -41,7 +33,6 @@ main {
     content: '';
     width: 50%;
     aspect-ratio: 1;
-<<<<<<< HEAD
     border-radius: 25px;
     z-index: 2;
     background-color: #f2dc6b;
@@ -55,21 +46,10 @@ main {
     -o-border-radius: 25px;
 }
 
-=======
-    border-radius: 20px;
-    z-index: 2;
-    background-color: #f2dc6b;
-    position: absolute;
-    bottom: -16%;
-    right: -8%;
-    transform: rotate(25deg);
+.logo-line img {
+    width: 5rem;
 }
 
-/* .card * {
-    border: 1px solid red;
-} */
-
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 .main-body {
     display: flex;
     justify-content: space-between;
@@ -85,22 +65,18 @@ main {
 
 .team-name p {
     font-family: 'Gentium Book Basic', serif;
-    font-size: 30px;
+    font-size: 1.8rem;
     line-height: 1.5;
     font-weight: 700;
-    margin-top: -45px;
+    margin-top: -3rem;
     color: #8c7632;
 }
 
 .team-name h1 {
     font-family: 'Gentium Book Basic', serif;
-    font-size: 65px;
+    font-size: 4rem;
     line-height: 1;
     font-weight: 700;
-<<<<<<< HEAD
-=======
-    color: #a65d03;
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 }
 
 .team-members {
@@ -109,35 +85,24 @@ main {
     color: #333333;
 }
 
-<<<<<<< HEAD
 .line-1, .line-2, .line-3, .leader-line {
     display: flex;
     flex-direction: column;
 }
 
-=======
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 .team-members p {
     font-family: 'Outfit', sans-serif;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
-    line-height: 30px;
+    line-height: 1.85rem;
     margin-top: 0;
-<<<<<<< HEAD
-=======
-    mix-blend-mode: color-burn;
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 }
 
 .team-members .leader::before {
     content: url("img/hermes.png");
     display: inline-block;
-<<<<<<< HEAD
-    width: 30px;
-=======
-    width: 31px;
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
-    height: 30px;
+    width: 1.85rem;
+    height: 1.85rem;
     vertical-align: top;
     margin-right: 5px;
 }
@@ -145,55 +110,30 @@ main {
 .team-members .members::before {
     content: url("img/laurel-wreath-150577.svg");
     display: inline-block;
-    width: 30px;
-<<<<<<< HEAD
-    height: 25px;
+    width: 1.85rem;
+    height: 1.85rem;
     vertical-align: top;
     margin-right: 5px;
 }
 
+@media only screen and (max-width: 992px) {
+    html {
+        font-size: 14px;
+    }
+}
+
 @media only screen and (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+
     .card {
-        width: 85vh;
         transform: rotate(90deg);
     }
+}
 
-    .team-name p {
-        font-size: 20px;
-        margin-top: -60px;
+@media only screen and (max-width: 450px) {
+    html {
+        font-size: 10px;
     }
-    
-    .team-name h1 {
-        font-size: 50px;
-    }
-
-    .team-members p {
-        font-family: 'Outfit', sans-serif;
-        font-size: 15px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-top: 0;
-    }
-    
-    .team-members .leader::before {
-        content: url("img/hermes.png");
-        display: inline-block;
-        width: 20px;
-        height: 25px;
-        vertical-align: top;
-        margin-right: 15px;
-    }
-    
-    .team-members .members::before {
-        content: url("img/laurel-wreath-150577.svg");
-        display: inline-block;
-        width: 20px;
-        height: 25px;
-        vertical-align: top;
-        margin-right: 15px;
-    }
-=======
-    vertical-align: top;
-    margin-right: 5px;
->>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 }
