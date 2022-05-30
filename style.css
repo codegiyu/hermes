@@ -11,14 +11,22 @@ main {
     height: 100vh;
     background-color: rgb(252, 239, 224);
     display: flex;
+<<<<<<< HEAD
     align-items: center;
+=======
+    align-items: top;
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
     justify-content: center;
 }
 
 .card {
     position: relative;
+<<<<<<< HEAD
     width: 660px;
     aspect-ratio: 1.85;
+=======
+    width: 50%;
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
     background-color: white;
     margin-top: auto;
     margin-bottom: auto;
@@ -33,6 +41,7 @@ main {
     content: '';
     width: 50%;
     aspect-ratio: 1;
+<<<<<<< HEAD
     border-radius: 25px;
     z-index: 2;
     background-color: #f2dc6b;
@@ -46,6 +55,21 @@ main {
     -o-border-radius: 25px;
 }
 
+=======
+    border-radius: 20px;
+    z-index: 2;
+    background-color: #f2dc6b;
+    position: absolute;
+    bottom: -16%;
+    right: -8%;
+    transform: rotate(25deg);
+}
+
+/* .card * {
+    border: 1px solid red;
+} */
+
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 .main-body {
     display: flex;
     justify-content: space-between;
@@ -73,6 +97,10 @@ main {
     font-size: 65px;
     line-height: 1;
     font-weight: 700;
+<<<<<<< HEAD
+=======
+    color: #a65d03;
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 }
 
 .team-members {
@@ -81,23 +109,34 @@ main {
     color: #333333;
 }
 
+<<<<<<< HEAD
 .line-1, .line-2, .line-3, .leader-line {
     display: flex;
     flex-direction: column;
 }
 
+=======
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 .team-members p {
     font-family: 'Outfit', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 30px;
     margin-top: 0;
+<<<<<<< HEAD
+=======
+    mix-blend-mode: color-burn;
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 }
 
 .team-members .leader::before {
     content: url("img/hermes.png");
     display: inline-block;
+<<<<<<< HEAD
     width: 30px;
+=======
+    width: 31px;
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
     height: 30px;
     vertical-align: top;
     margin-right: 5px;
@@ -107,6 +146,7 @@ main {
     content: url("img/laurel-wreath-150577.svg");
     display: inline-block;
     width: 30px;
+<<<<<<< HEAD
     height: 25px;
     vertical-align: top;
     margin-right: 5px;
@@ -152,4 +192,8 @@ main {
         vertical-align: top;
         margin-right: 15px;
     }
+=======
+    vertical-align: top;
+    margin-right: 5px;
+>>>>>>> 6b233c783027cbc731b8ef0556e86be0fd8f9ecd
 }
