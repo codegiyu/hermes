@@ -82,7 +82,7 @@ main {
 .team-members {
     width: 30%;
     z-index: 3;
-    color: #333333;
+    color: #535252;
 }
 
 .line-1, .line-2, .line-3, .leader-line {
@@ -120,9 +120,16 @@ main {
     html {
         font-size: 14px;
     }
+
+    .team-members .leader::before {
+        width: 1.85rem;
+        height: 1.85rem;
+        margin-bottom: 5px;
+        vertical-align: text-bottom;
+    }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) and (orientation: portrait) {
     html {
         font-size: 13px;
     }
@@ -132,8 +139,30 @@ main {
     }
 }
 
-@media only screen and (max-width: 450px) {
+@media only screen and (min-width: 480px) and (max-width: 900px) and (orientation: landscape) {          
     html {
         font-size: 11px;
     }
+
+    .card {
+        transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+}
+}
+
+@media only screen and (max-width: 450px) and (orientation: portrait) {
+    html {
+        font-size: 10px;
+    }
+
+    .card {
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+}
 }

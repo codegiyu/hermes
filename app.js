@@ -25,13 +25,13 @@ console.log(codegiyu["Best movie"]);
 // Question 4
 let noun = "Bro";
 let verb = "is";
-let adjective = "great";
+let adjective = "helpful";
 
-let sentenceOne;
-let sentenceTwo;
-let sentenceThree;
-let sentenceFour;
-let sentenceFive;
+let sentenceOne = noun + " " + verb + " " + adjective + ".";
+let sentenceTwo = noun + " " + verb + " tall.";
+let sentenceThree = noun + " " + verb + " dark.";
+let sentenceFour = noun + " " + verb + " always having fun.";
+let sentenceFive = "Everyone " + verb + " advised to be like " + noun + ".";
 
 console.log(sentenceOne);
 console.log(sentenceTwo);
@@ -41,7 +41,9 @@ console.log(sentenceFive);
 
 // Question 5
 function remainder (a, b) {
-    return a%b;
+    let remainder = a % b;
+    let answer = "The remainder of " + a + " ÷ " + b + " is " + remainder;
+    return answer;
 }
 
 //Question 6
@@ -52,15 +54,15 @@ function quadraticSolver(a, b, c) {
     let answer;
 
     if(rootOne === rootTwo) {
-        answer = "The root of your quadratic equation is " + rootOne + ".";
+        answer = "The root of the quadratic equation with a=" + a + ", b=" + b + ", and c=" + c + " is " + rootOne.toFixed(2);
     } else {
-        answer = "The roots of your quadratic equation are " + rootOne + " and " + rootTwo + ".";
+        answer = "The roots of the quadratic equation with a=" + a + ", b=" + b + ", and c=" + c + " are " + rootOne.toFixed(2) + " and " + rootTwo.toFixed(2);
     }
     
     return answer;
 }
 
-console.log(quadraticSolver(2, -3, 1));
+console.log(quadraticSolver(1, -4, 4));
 
 // Question 7
 const myNoun = "dog";
@@ -70,25 +72,28 @@ const myAdverb = "quickly";
 
 const wordBlanks = "My " + myAdjective + " " + myNoun + " " + myVerb + " " + myAdverb + ".";
 
+console.log(wordBlanks);
+
 // Question 8
 function areaOfCircle(r, unit) {
     const pi = 3.142;
     let area = pi * Math.pow(r, 2);
-    let answer = "The area of the circle is " + area.toFixed(2) + unit + " squared."
+    let answer = "The area of the circle with radius " + r + unit + " is " + area.toFixed(2) + unit + " squared."
     return answer;
 }
 console.log(areaOfCircle(9, "cm"));
 
 //Question 9
 function simpleInterestCalculator(p, r, t) {
-    let simpleInterest = (p * r * t) / (100 * 100);
+    let simpleInterest = (p * r * t) / (100);
+    let answer = "The simple interest on ₦" + p + " for " + t + " years at " + r + "% is ₦" + simpleInterest;
 
-    return simpleInterest;
+    return answer;
 }
-console.log(8200, 17.5, 2.5);
+console.log(simpleInterestCalculator(8200, 17.5, 2.5));
 
 // Question 10
-console.log(10 % 4);
+console.log(remainder(10, 4));
 
 // Question 11
 function bmiCalculator(mass, height) {
